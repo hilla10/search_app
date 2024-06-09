@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- main style -->
+    <link rel="stylesheet" href="dist/css/style.css">
+    <!-- script -->
+    <script type="module" src="js/main.js" defer></script>
+    <title>SearchMe</title>
+</head>
+
+<body>
+    <main>
+        <h1 class="offscreen">Search Me A Wikipedia Powered Search Engine</h1>
+        <section class="searchEntry">
+            <h2 class="offscreen">Search Term Entry</h2>
+            <div class="logo" aria-hidden="true">
+                <span class="blue">S</span>
+                <span class="red">e</span>
+                <span class="yellow">a</span>
+                <span class="blue">r</span>
+                <span class="green">c</span>
+                <span class="red">h</span>
+                <span class="blue">M</span>
+                <span class="yellow">e</span>
+                <span class="red exclaim">!</span>
+            </div>
+            <form id="searchBar" class="searchBar">
+                <label for="search" class="offscreen">Enter a search term or phrase</label>
+                <input type="text" id="search" autocomplete="off">
+                <div id="clear" class="none button clear" role="button" tabindex="0" aria-label="clear search terms">
+                    <i class="fas fa-times"></i>
+                </div>
+                <button id="searchButton" class="button searchButton" type="submit" aria-label="submit button">
+                    <i class="fas fa-search blue"></i>
+                </button>
+            </form>
+        </section>
+        <section class="results">
+            <h2 class="offscreen">Search Results</h2>
+            <div class="statsBar">
+                <div id="stats" class="stats" aria-live="assertive"></div>
+            </div>
+            <div id="searchResults" class="searchResults">
+                <!-- <div class="resultItem">
+                    <div class="resultTitle">
+                        <a href="">Dachsund</a>
+
+                    </div>
+                    <div class="resultContents">
+                        <div class="resultImage">
+                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.IhiqRWFamp-enjV2csKdzwHaE8%26pid%3DApi&f=1&ipt=f9f97db938286a195bbb89cd7ea4539669b29eb2e1c09611e3f75971edc78a2b&ipo=images"
+                                alt="Dachsund">
+                        </div>
+                        <div class="resultText">
+                            <p class="resultDescription">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, error.
+                            </p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><span aria-hidden="true">&lt;&lt;</span> Powered by <a href="https://www.wikipedia.org"
+                target="_blank">Wikipedia</a> <span aria-hidden="true">&gt;&gt;</span></p>
+    </footer>
+</body>
+
+</html>
